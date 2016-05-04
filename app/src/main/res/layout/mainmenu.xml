@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grumpycat2"
+    >
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/GridLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnCount="4"
+        android:rowCount="27"
+        tools:context=".GridXMLActivity" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:width="100dp"
+            android:height="50dp"
+            android:onClick="startGame"
+            android:text="New Game"
+            android:clickable="true"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+
+        <Button
+        android:id="@+id/button2"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:width="100dp"
+        android:height="50dp"
+        android:onClick="startSettings"
+        android:text="Settings"
+        android:clickable="true"
+            android:layout_row="3"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="High Scores"
+            android:id="@+id/button5"
+            android:onClick="startHighScore"
+            android:clickable="true"
+            android:layout_row="4"
+            android:layout_column="0" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_column="0"
+            android:width="100dp"
+            android:height="50dp"
+            android:onClick="startSplash"
+            android:text="Back"
+            android:clickable="true"
+            android:layout_row="26" />
+    </GridLayout>
+
+
+</LinearLayout>

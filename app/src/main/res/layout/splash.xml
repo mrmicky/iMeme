@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundsplash"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="412dp"
+        android:text="Welcome to iMeme \n\nAs the sole survivor of the war on memes, you&apos;re the only hope at a chance to rebuild Antimemedom. \n\nGo forth to victory!"
+        android:textSize="30sp"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_row="0"
+        android:textColor="#ffffff"
+        android:layout_column="0" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_column="0"
+            android:layout_gravity="bottom"
+            android:width="100dp"
+            android:height="50dp"
+
+            android:onClick="startMainMenu"
+            android:text="Main Menu"
+            android:clickable="true" />
+    </GridLayout>
+
+</LinearLayout>

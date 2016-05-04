@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/trollface"
+    >
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/GridLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnCount="4"
+        android:rowCount="31"
+        tools:context=".GridXMLActivity" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HIGHSCORE"
+            android:textSize="30sp"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="0"
+            android:textColor="#ffffff"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Main Menu"
+            android:id="@+id/button4"
+            android:layout_gravity="center_horizontal"
+            android:onClick="startMainMenu"
+            android:clickable="true"
+            android:layout_row="30"
+            android:layout_column="0" />
+    </GridLayout>
+
+</LinearLayout>
